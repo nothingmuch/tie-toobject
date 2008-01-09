@@ -5,12 +5,13 @@ use strict;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-	NAME         => '',
-	VERSION_FROM => '',
+	NAME         => 'Tie::ToObject',
+	VERSION_FROM => 'lib/Tie/ToObject.pm',
 	INSTALLDIRS  => 'site',
 	SIGN         => 1,
 	PL_FILES     => { },
 	PREREQ_PM    => {
+		'Tie::RefHash' => 0, # core, used in test
 	},
 );
 
