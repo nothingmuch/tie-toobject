@@ -5,6 +5,8 @@ package Tie::ToObject;
 use strict;
 use warnings;
 
+our $VERSION = "0.01";
+
 sub AUTOLOAD {
 	my ( $self, $tied ) = @_;
 	my ( $method ) = ( our $AUTOLOAD =~ /([^:]+)$/ );
