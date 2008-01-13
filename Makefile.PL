@@ -12,6 +12,7 @@ WriteMakefile(
 	PL_FILES     => { },
 	PREREQ_PM    => {
 		'Tie::RefHash' => 0, # core, used in test
+		'Test::use::ok' => 0,
 	},
 );
 
