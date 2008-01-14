@@ -3,7 +3,7 @@
 package Tie::ToObject;
 
 use strict;
-use warnings;
+#use warnings;
 
 use vars qw($VERSION $AUTOLOAD);
 
