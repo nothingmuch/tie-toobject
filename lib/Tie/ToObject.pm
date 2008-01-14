@@ -5,11 +5,13 @@ package Tie::ToObject;
 use strict;
 use warnings;
 
-our $VERSION = "0.02";
+use vars qw($VERSION $AUTOLOAD);
+
+$VERSION = "0.02";
 
 sub AUTOLOAD {
 	my ( $self, $tied ) = @_;
-	my ( $method ) = ( our $AUTOLOAD =~ /([^:]+)$/ );
+	my ( $method ) = ( $AUTOLOAD =~ /([^:]+)$/ );
 
 	if ( $method =~ /^TIE/ ) {
 		return $tied;
