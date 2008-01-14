@@ -14,6 +14,7 @@ WriteMakefile(
 		'Tie::RefHash' => 0, # core, used in test
 		'Test::use::ok' => 0,
 		'Test::More' => 0,
+		'Scalar::Util' => 0,
 	},
 );
 
