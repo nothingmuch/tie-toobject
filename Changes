@@ -1,0 +1,8 @@
+0.03
+	- 'use vars' instead of 'our' to make 5.004 happy
+
+0.02
+	- missing dep in Makefile.PL
+
+0.01
+	- Initial release
