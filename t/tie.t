@@ -29,12 +29,12 @@ ok($e, "error" );
 like( $e, qr/object.*tie/i, "right error" );
 
 eval { tie my %other_hash, 'Tie::ToObject', { } };
-my $e = $@;
+$e = $@;
 ok($e, "error" );
 like( $e, qr/object.*tie/i, "right error" );
 
 eval { Tie::ToObject->blah(tied(%hash)) };
-my $e = $@;
+$e = $@;
 ok($e, "error" );
 like( $e, qr/method.*blah/i, "right error" );
 
