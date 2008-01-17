@@ -10,7 +10,7 @@ use vars qw($VERSION $AUTOLOAD);
 use Carp qw(croak);
 use Scalar::Util qw(blessed);
 
-$VERSION = "0.02";
+$VERSION = "0.03";
 
 sub AUTOLOAD {
 	my ( $self, $tied ) = @_;
