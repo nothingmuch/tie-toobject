@@ -48,11 +48,11 @@ Tie::ToObject - Tie to an existing object.
 =head1 DESCRIPTION
 
 While L<perldoc/tie> allows tying to an arbitrary object, the class in question
-must support this in it's implementation of C<TIEHASH>, C<TIEARRAY> or
+must support this in its implementation of C<TIEHASH>, C<TIEARRAY> or
 whatever.
 
-This class provides a very tie constructor that simply returns the object it
-was given as it's first argument.
+This class provides a very minimal tie constructor that simply returns the
+object it was given as its first argument.
 
 This way side effects of calling C<< $object->TIEHASH >> are avoided.
 

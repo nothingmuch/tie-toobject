@@ -1,3 +1,6 @@
+0.04
+	- Documentation fixes (Reuben Thomas)
+
 0.03
 	- 'use vars' instead of 'our' to make 5.004 happy
 
